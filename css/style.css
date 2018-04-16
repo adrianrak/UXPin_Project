@@ -1,0 +1,90 @@
+/* Variables */
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.logo {
+  position: fixed;
+  top: 5vh;
+  left: 10vh;
+  z-index: 1000;
+  transition: all .5s; }
+  .logo img {
+    width: 123px;
+    height: 48px; }
+
+.hello h1 {
+  opacity: 1;
+  color: #f37224;
+  font-size: 60px;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left; }
+
+.boxForm {
+  opacity: 1;
+  padding: 0px;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: #c2c0c0;
+  border-style: solid;
+  background-color: white;
+  background-image: none;
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: center center;
+  width: 420px;
+  height: 500px; }
+  .boxForm input.invalid {
+    border: 3px solid red; }
+  .boxForm input.valid {
+    border: 3px solid green; }
+
+.circle {
+  opacity: 0.25;
+  background-color: #f37224;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  transform: rotate(0deg) translate(320px, -480px) rotate(0deg); }
+
+.circle2 {
+  opacity: 0.25;
+  background-color: #f37224;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  transform: rotate(0deg) translate(900px, 241px) rotate(0deg); }
+
+.cookies {
+  opacity: 1;
+  padding: 0px;
+  border-width: 1px 0px;
+  border-radius: 0px;
+  border-color: #c2c0c0;
+  border-style: solid;
+  background-color: white;
+  width: 100%;
+  height: 760px; }
+  .cookies .cookieBox {
+    opacity: 1;
+    padding: 0px;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #c2c0c0;
+    border-style: solid;
+    background-color: white;
+    background-image: none;
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: center center;
+    width: 300px;
+    height: 300px; }
+
+.factory img {
+  width: 373px;
+  height: 265px; }
