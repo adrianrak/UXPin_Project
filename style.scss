@@ -206,6 +206,9 @@ footer {
 @media(max-width: 767px) {
     .hello {
         flex-direction: column;
+        .box-form {
+            width: 300px;
+        }
     }
 
     .cookies {
@@ -217,8 +220,8 @@ footer {
         .displayFactory {
             flex-direction: column;
             img {
-                width: 373px;
-                height: 265px;
+                width: 187px;
+                height: 133px;
                 margin-top: 50px;
             }
         }
