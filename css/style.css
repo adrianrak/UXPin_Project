@@ -158,7 +158,7 @@ footer {
 @media (max-width: 767px) {
   .hello {
     flex-direction: column; }
-    .hello .box-form {
+    .hello .boxForm {
       width: 300px; }
   .cookies .row {
     display: inline-grid; }
