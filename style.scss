@@ -40,65 +40,69 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-top: 125px;
-    h1 {
-        opacity: 1;
-        color: $mainColor;
-        font-size: 40px;
-        font-weight: bold;
-        font-style: normal;
-        text-decoration: none;
-        text-align: left;
-    }
-}
-.boxForm {
-    border: 1px solid  rgb(194, 192, 192);
-    border-radius: 5px;
-    background-color: rgb(255, 255, 255);
-    width: 370px;
-    //height: 450px;
-    text-align: center;
-    margin: 40px;
-    padding: 30px;
-    h3 {
-        font-weight: bold;
-        padding-bottom: 10px;
-    }
-    p {
-        padding-bottom: 10px;
-    }
-    input {
-        width: 100%;
-        padding: 5px;
-        margin: 5px;
-        border-radius: 5px;
-        &:last-child {
-            background-color: $mainColor;
-            color: #FFF;
-            border: none;
-            height: 40px;
-            margin-top: 30px;
+    .textHello {
+        flex-grow: 2;
+        h1 {
+            opacity: 1;
+            color: $mainColor;
+            font-size: 40px;
             font-weight: bold;
-            &:hover {
-                border: 2px solid $mainColor;
-                background-color: #FFF;
-                color: $mainColor;
-                transition: 1s;
-            }
+            font-style: normal;
+            text-decoration: none;
+            text-align: left;
         }
     }
-    #checkbox {
-        width: 15px;   
-    }
-    input.invalid {
-        border: 3px solid red;
-    }
-    input.valid{
-        border: 3px solid green;
-    }
-    &:hover {
-        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    .boxForm {
+        border: 1px solid  rgb(194, 192, 192);
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
+        width: 370px;
+        //height: 450px;
+        text-align: center;
+        margin: 40px;
+        padding: 30px;
+        h3 {
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+        p {
+            padding-bottom: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 5px;
+            &:last-child {
+                background-color: $mainColor;
+                color: #FFF;
+                border: none;
+                height: 40px;
+                margin-top: 30px;
+                font-weight: bold;
+                &:hover {
+                    border: 2px solid $mainColor;
+                    background-color: #FFF;
+                    color: $mainColor;
+                    transition: 1s;
+                }
+            }
+        }
+        #checkbox {
+            width: 15px;   
+        }
+        input.invalid {
+            border: 3px solid red;
+        }
+        input.valid{
+            border: 3px solid green;
+        }
+        &:hover {
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+        }
     }
 }
+
 
 /* Section cookies */
 
@@ -140,28 +144,58 @@ body {
 /* Section Factory */
 
 .factory {
-    background: url('../image/kolo2.png') no-repeat;
+    background: url('../image/kolo.png') no-repeat fixed;
     background-size: contain; 
-    img {
-        width: 373px;
-        height: 265px;
-    }
+    .displayFactory {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        .textFactory {
+            flex-grow: 2;
+            h3 {
+                font-weight: bold;
+            }
+        }  
+        img {
+            width: 560px;
+            height: 398px;
+        }
+    }   
 }
-.circle3 {
-    opacity: 0.25;
-    background-color: $mainColor;
-    width: 600px;
-    height: 600px;
-    border-radius: 50%;
-    transform: translate(100px, 300px);
-}
+
 footer {
+    display: flex;
+    align-items: center;
     opacity: 1;
-    padding: 0px;
     border-width: 1px 0px;
     border-radius: 0px;
     border-color: rgb(194, 192, 192);
     border-style: solid;
     background-color: rgb(109, 110, 112);
     height: 170px;
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #FFF;
+        .textContact {
+            flex-grow: 2;
+        }
+       .icon {
+           flex-grow: 1;
+           padding: 5px; 
+           font-size: 30px;
+           border-radius: 5px;
+           a {
+               text-decoration: none;
+               color: #FFF;
+               opacity: 0.5;
+               &:hover {
+                   opacity: initial;
+               }
+           }
+       }
+    }
 }

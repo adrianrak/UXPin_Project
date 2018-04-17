@@ -29,53 +29,54 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 125px; }
-  .hello h1 {
-    opacity: 1;
-    color: #f37224;
-    font-size: 40px;
-    font-weight: bold;
-    font-style: normal;
-    text-decoration: none;
-    text-align: left; }
-
-.boxForm {
-  border: 1px solid #c2c0c0;
-  border-radius: 5px;
-  background-color: white;
-  width: 370px;
-  text-align: center;
-  margin: 40px;
-  padding: 30px; }
-  .boxForm h3 {
-    font-weight: bold;
-    padding-bottom: 10px; }
-  .boxForm p {
-    padding-bottom: 10px; }
-  .boxForm input {
-    width: 100%;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px; }
-    .boxForm input:last-child {
-      background-color: #f37224;
-      color: #FFF;
-      border: none;
-      height: 40px;
-      margin-top: 30px;
-      font-weight: bold; }
-      .boxForm input:last-child:hover {
-        border: 2px solid #f37224;
-        background-color: #FFF;
-        color: #f37224;
-        transition: 1s; }
-  .boxForm #checkbox {
-    width: 15px; }
-  .boxForm input.invalid {
-    border: 3px solid red; }
-  .boxForm input.valid {
-    border: 3px solid green; }
-  .boxForm:hover {
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); }
+  .hello .textHello {
+    flex-grow: 2; }
+    .hello .textHello h1 {
+      opacity: 1;
+      color: #f37224;
+      font-size: 40px;
+      font-weight: bold;
+      font-style: normal;
+      text-decoration: none;
+      text-align: left; }
+  .hello .boxForm {
+    border: 1px solid #c2c0c0;
+    border-radius: 5px;
+    background-color: white;
+    width: 370px;
+    text-align: center;
+    margin: 40px;
+    padding: 30px; }
+    .hello .boxForm h3 {
+      font-weight: bold;
+      padding-bottom: 10px; }
+    .hello .boxForm p {
+      padding-bottom: 10px; }
+    .hello .boxForm input {
+      width: 100%;
+      padding: 5px;
+      margin: 5px;
+      border-radius: 5px; }
+      .hello .boxForm input:last-child {
+        background-color: #f37224;
+        color: #FFF;
+        border: none;
+        height: 40px;
+        margin-top: 30px;
+        font-weight: bold; }
+        .hello .boxForm input:last-child:hover {
+          border: 2px solid #f37224;
+          background-color: #FFF;
+          color: #f37224;
+          transition: 1s; }
+    .hello .boxForm #checkbox {
+      width: 15px; }
+    .hello .boxForm input.invalid {
+      border: 3px solid red; }
+    .hello .boxForm input.valid {
+      border: 3px solid green; }
+    .hello .boxForm:hover {
+      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); }
 
 /* Section cookies */
 .cookies {
@@ -107,26 +108,47 @@ body {
 
 /* Section Factory */
 .factory {
-  background: url("../image/kolo2.png") no-repeat;
+  background: url("../image/kolo.png") no-repeat fixed;
   background-size: contain; }
-  .factory img {
-    width: 373px;
-    height: 265px; }
-
-.circle3 {
-  opacity: 0.25;
-  background-color: #f37224;
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  transform: translate(100px, 300px); }
+  .factory .displayFactory {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 70px; }
+    .factory .displayFactory .textFactory {
+      flex-grow: 2; }
+      .factory .displayFactory .textFactory h3 {
+        font-weight: bold; }
+    .factory .displayFactory img {
+      width: 560px;
+      height: 398px; }
 
 footer {
+  display: flex;
+  align-items: center;
   opacity: 1;
-  padding: 0px;
   border-width: 1px 0px;
   border-radius: 0px;
   border-color: #c2c0c0;
   border-style: solid;
   background-color: #6d6e70;
   height: 170px; }
+  footer .contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFF; }
+    footer .contact .textContact {
+      flex-grow: 2; }
+    footer .contact .icon {
+      flex-grow: 1;
+      padding: 5px;
+      font-size: 30px;
+      border-radius: 5px; }
+      footer .contact .icon a {
+        text-decoration: none;
+        color: #FFF;
+        opacity: 0.5; }
+        footer .contact .icon a:hover {
+          opacity: initial; }
