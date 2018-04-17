@@ -8,7 +8,7 @@ $(document).ready(function() {
 		}
 		else{
 			input.removeClass("valid").addClass("invalid");
-            alert('Wprowadź Imię i nazwisko!');
+            //alert('Wprowadź Imię i nazwisko!');
 		}
     });
 
@@ -21,7 +21,7 @@ $(document).ready(function() {
 		}
 		else{
 			input.removeClass("valid").addClass("invalid");
-			alert('Wprowadź adres e-mail');
+			//alert('Wprowadź adres e-mail');
 		}
     });
 
@@ -34,7 +34,7 @@ $(document).ready(function() {
         }
         else {
             event.preventDefault();
-            alert("Uzupełnij wszystkie pola!");	
+            alert("Uzupełnij poprawnie wszystkie pola!");	
         }
     });
 });
