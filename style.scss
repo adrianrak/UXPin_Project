@@ -3,8 +3,9 @@
 
 /* Variables */
 
-$mainColor: rgb(243, 114, 36);
-$borderColor: rgb(194, 192, 192);
+$main-color: rgb(243, 114, 36);
+$border-color: rgb(194, 192, 192);
+$bright-color: rgb(255, 255, 255);
 
 
 * {
@@ -33,7 +34,7 @@ body {
 .header {
     background: url('../image/kolo.png') no-repeat fixed;
     background-size: contain;
-    border-bottom: 1px solid $borderColor;
+    border-bottom: 1px solid $border-color;
 }
 .hello {
     display: flex;
@@ -44,7 +45,7 @@ body {
         flex-grow: 2;
         h1 {
             opacity: 1;
-            color: $mainColor;
+            color: $main-color;
             font-size: 40px;
             font-weight: bold;
             font-style: normal;
@@ -53,11 +54,10 @@ body {
         }
     }
     .boxForm {
-        border: 1px solid  rgb(194, 192, 192);
+        border: 1px solid  $border-color;
         border-radius: 5px;
-        background-color: rgb(255, 255, 255);
+        background-color: $bright-color;
         width: 370px;
-        //height: 450px;
         text-align: center;
         margin: 40px;
         padding: 30px;
@@ -74,16 +74,16 @@ body {
             margin: 5px;
             border-radius: 5px;
             &:last-child {
-                background-color: $mainColor;
-                color: #FFF;
+                background-color: $main-color;
+                color: $bright-color;
                 border: none;
                 height: 40px;
                 margin-top: 30px;
                 font-weight: bold;
                 &:hover {
-                    border: 2px solid $mainColor;
-                    background-color: #FFF;
-                    color: $mainColor;
+                    border: 2px solid $main-color;
+                    background-color: $bright-color;
+                    color: $main-color;
                     transition: 1s;
                 }
             }
@@ -109,7 +109,7 @@ body {
 .cookies {
     margin-top: 70px;
     text-align: center;
-    border-bottom: 1px solid $borderColor;
+    border-bottom: 1px solid $border-color;
     h3 {
         font-weight: bold;
     }
@@ -121,7 +121,7 @@ body {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        border: 1px solid $borderColor;
+        border: 1px solid $border-color;
         border-radius: 5px;
         width: 270px;
         height: 270px;
@@ -171,7 +171,7 @@ footer {
     opacity: 1;
     border-width: 1px 0px;
     border-radius: 0px;
-    border-color: rgb(194, 192, 192);
+    border-color: $border-color;
     border-style: solid;
     background-color: rgb(109, 110, 112);
     height: 170px;
@@ -179,7 +179,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        color: #FFF;
+        color: $bright-color;
         .textContact {
             flex-grow: 2;
         }
@@ -191,7 +191,7 @@ footer {
            a {
                text-decoration: none;
                margin: 5px;
-               color: #FFF;
+               color: $bright-color;
                opacity: 0.5;
                &:hover {
                    opacity: initial;
@@ -208,12 +208,16 @@ footer {
         flex-direction: column;
         .boxForm {
             width: 300px;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
         }
     }
 
     .cookies {
         .row {
             display: inline-grid;
+        }
+        .cookieBox {
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
         }
     }
     .factory {
@@ -227,17 +231,20 @@ footer {
         }
     }
     
-
-    .contact {
-        flex-direction: column;
+    footer {
+        height: 200px;
+        .contact {
+            flex-direction: column;
+        }
     }
+    
 }
 
 @media(min-width: 768px) and (max-width: 991px) {
 
     .factory {
         .displayFactory {
-            //flex-direction: column;
+            flex-direction: column;
             img {
                 width: 373px;
                 height: 265px;

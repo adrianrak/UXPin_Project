@@ -59,14 +59,14 @@ body {
       border-radius: 5px; }
       .hello .boxForm input:last-child {
         background-color: #f37224;
-        color: #FFF;
+        color: white;
         border: none;
         height: 40px;
         margin-top: 30px;
         font-weight: bold; }
         .hello .boxForm input:last-child:hover {
           border: 2px solid #f37224;
-          background-color: #FFF;
+          background-color: white;
           color: #f37224;
           transition: 1s; }
     .hello .boxForm #checkbox {
@@ -138,7 +138,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #FFF; }
+    color: white; }
     footer .contact .textContact {
       flex-grow: 2; }
     footer .contact .icon {
@@ -149,7 +149,7 @@ footer {
       footer .contact .icon a {
         text-decoration: none;
         margin: 5px;
-        color: #FFF;
+        color: white;
         opacity: 0.5; }
         footer .contact .icon a:hover {
           opacity: initial; }
@@ -159,22 +159,29 @@ footer {
   .hello {
     flex-direction: column; }
     .hello .boxForm {
-      width: 300px; }
+      width: 300px;
+      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); }
   .cookies .row {
     display: inline-grid; }
+  .cookies .cookieBox {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); }
   .factory .displayFactory {
     flex-direction: column; }
     .factory .displayFactory img {
       width: 187px;
       height: 133px;
       margin-top: 50px; }
-  .contact {
-    flex-direction: column; } }
+  footer {
+    height: 200px; }
+    footer .contact {
+      flex-direction: column; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .factory .displayFactory img {
-    width: 373px;
-    height: 265px; } }
+  .factory .displayFactory {
+    flex-direction: column; }
+    .factory .displayFactory img {
+      width: 373px;
+      height: 265px; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .cookies .cookieBox {
